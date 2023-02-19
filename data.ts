@@ -5,7 +5,7 @@ import InternshipHubImg from "./public/internshiphub.png";
 export const portfolio = {
   about: {
     firstName: "Collins",
-    lastName: "Mwambazi",
+    lastName: "Lubwama",
     img: profileImg,
     bio: `Hi, I'm Mwambazi Collins 
 
