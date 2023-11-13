@@ -12,8 +12,15 @@ const ScrollSection = chakra(Scroll.Section);
 const ProjectSection = ({ project }: any) => {
   return (
     <ScrollSection borderBottom="sm">
-      <Box h="h-screen" pos="relative">
-        <Image layout="fill" priority src={project.img} objectFit="cover" />
+      <Box py="4xl" px="3xl">
+        <Box maxW="4xl" m="0 auto">
+          <Heading size="2xl" mb="2xl">
+            {project.name}
+          </Heading>
+          <Text whiteSpace="pre-wrap" size="md" mb="2xl">
+            {project.description}
+          </Text>
+        </Box>
       </Box>
       <Flex borderY="sm" h="12">
         <Center px="md" h="100%" borderRight="sm">
@@ -43,15 +50,9 @@ const ProjectSection = ({ project }: any) => {
           View Project
         </LinkButton>
       </Flex>
-      <Box py="4xl" px="3xl">
-        <Box maxW="4xl" m="0 auto">
-          <Heading size="2xl" mb="2xl">
-            {project.name}
-          </Heading>
-          <Text whiteSpace="pre-wrap" size="md" mb="2xl">
-            {project.description}
-          </Text>
-        </Box>
+      <Box h="h-screen" pos="relative">
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+        <Image layout="fill" priority src={project.img} objectFit="cover" />
       </Box>
     </ScrollSection>
   );
