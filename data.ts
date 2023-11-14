@@ -21,7 +21,7 @@ I've been learning and experimenting with tech for about 7 years ago. Below are 
       name: "LawSuite",
       img: LawSuite,
       tools: ["NextJS", "TypeScript", "OpenAI API", "Whisper", "Replicate"],
-      url: "https://audio-scripter.vercel.app/",
+      url: "https://law-suite.vercel.app/",
       description: `AI-powered search and chat for Uganda's Law Corpus.`,
     },
     {
